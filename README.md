@@ -27,4 +27,4 @@ Retrieves products based on the specified filtering and sorting criteria. The fo
 - `fields`: string (comma-separated list of fields to include in the response)
 - `page`: number (page number)
 - `limit`: number (number of items per page)
-- `numericFilters`: string (comma-separated list of numeric filters in the format of price>30, which means price greater then 30)
+- `numericFilters`: string (comma-separated list of numeric filters in the format of price>30, which means price greater than 30)
