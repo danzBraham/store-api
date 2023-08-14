@@ -1,13 +1,13 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const productSchema = mongoose.Schema({
   name: {
     type: String,
-    required: [true, "Product Name Must be Provide"],
+    required: [true, 'Product name must be provided'],
   },
   price: {
     type: Number,
-    required: [true, "Product Price Must be Provide"],
+    required: [true, 'Product price must be provided'],
   },
   featured: {
     type: Boolean,
@@ -24,10 +24,10 @@ const productSchema = mongoose.Schema({
   company: {
     type: String,
     enum: {
-      values: ["ikea", "liddy", "caressa", "marcos"],
-      message: "{VALUE} is not supported",
+      values: ['ikea', 'liddy', 'caressa', 'marcos'],
+      message: '{VALUE} is not supported',
     },
   },
 });
 
-export default mongoose.model("Product", productSchema);
+export default mongoose.model('Product', productSchema);
